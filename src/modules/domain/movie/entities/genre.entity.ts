@@ -6,6 +6,9 @@ export class GenreEntity extends BaseEntity {
     @Column()
     name: string;
 
+    @Column()
+    description: string;
+
     @ManyToMany(() => MovieEntity, movie => movie.genres)
     moviesGenre: MovieEntity[];
 }
