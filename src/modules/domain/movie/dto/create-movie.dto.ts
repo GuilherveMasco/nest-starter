@@ -15,13 +15,13 @@ export class CreateMovieDto {
     year: number;
 
     @JoiSchema(['CREATE'], Joi.array().items(Joi.string()).required())
-    castId: string[];
+    castIds: string[];
 
     @JoiSchema(['CREATE'], Joi.string().required())
     directorId: string;
 
     @JoiSchema(['CREATE'], Joi.array().items(Joi.string()).required())
-    genresId: string[];
+    genresIds: string[];
 
     @JoiSchema(['CREATE'], Joi.string().required())
     image: string;
