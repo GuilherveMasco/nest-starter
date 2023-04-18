@@ -14,9 +14,9 @@ export class MovieEntity extends BaseEntity {
     @Column()
     year: number;
 
-    //Diretor
-    //Atores
-    //Gênero
+    //Diretor - m-o
+    //Atores - m-n
+    //Gênero - m-n
 
     @Column()
     image: string;
