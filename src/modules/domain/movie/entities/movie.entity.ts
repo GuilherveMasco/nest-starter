@@ -1,8 +1,9 @@
 import { BaseEntity } from "src/common/entities/base.entity";
-import { Column, ManyToMany, ManyToOne } from "typeorm";
+import { Column, Entity, ManyToMany, ManyToOne } from "typeorm";
 import { ArtistEntity } from "./artist.entity";
 import { GenreEntity } from "./genre.entity";
 
+@Entity()
 export class MovieEntity extends BaseEntity {
     @Column()
     title: string;
